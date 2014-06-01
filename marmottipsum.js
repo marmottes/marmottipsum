@@ -4,7 +4,7 @@
  *  Lets generate a Marmotte Lorem Ipsum!
  */
 
-var marmottipsum = function() {
+var marmottipsum = function(size) {
 
 	var sentence = "";
 
@@ -15,7 +15,7 @@ var marmottipsum = function() {
 	var lastPunctuation = " ",
 		punctuation = "";
 
-	for (var i = 0; i < 100; i++) {
+	for (var i = 0; i < (typeof size === "number" ? size : 100); i++) {
 
 		if (lastPunctuation != " ") {
 
